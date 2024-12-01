@@ -1,0 +1,181 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Set Fonts - default fonts, heading fonts, nav fonts :root */
+
+
+/* Set Global colors primary, secondary, tertiary, sidebgcolor */
+
+
+
+:root{
+    --background-color: white;
+    --default-color: gray;
+    --accent-color:#9e32a8;
+    --contrast-color:white;
+    --tertiary-color: black;
+    --heading-color: rgb(6, 6, 37);
+    --nav-color: white;
+    --nav-hover-color: rgb(148, 145, 145);
+    --nav-dropdown-background-color: rgb(6, 6, 37); 
+    --nav-dropdown-color: gray;
+    --nav-dropdown-hover-color:rgb(148, 145, 145);
+}
+/* Fonts */
+:root{
+    --default-font: "Roboto", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+body{
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+}
+
+.header{
+    color: var(--background-color);
+    /* background-color: var(--background-color); */
+    overflow-y: auto;
+    width: 300px;
+    position: fixed;
+    padding: 0 15px;
+    z-index: 997;
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+.header .profile-img img{
+    display: block;
+    width: 120px;
+    margin: 15px auto;
+    border: 8px solid;
+}
+.logo h1{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--background-color);
+    font-family: var(--heading-font);
+}
+.header .logo {
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  
+  .header .logo img {
+    max-height: 32px;
+    margin-right: 8px;
+  }
+
+  .header .social-links {
+    margin: 0 0 20px 0;
+  }
+
+  .header .social-links a {
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--default-color), transparent 90%);
+    color: var(--default-color);
+    margin: 0 2px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+  }
+  
+  .header .social-links a:hover {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+  }
+
+.navmenu{
+    padding: 0;
+    z-index: 9997;
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--nav-color);
+    
+}
+.navmenu ul{
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+    color: var(--nav-color)
+}
+
+
+.navmenu a,
+.navmenu a:focus{
+  color: var(--nav-color);
+  padding: 15px 10px;
+  font-family: var(--nav-font);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: 0.3s;
+  width: 100%;
+
+}
+
+.navmenu a .navicon,
+.navmenu a:focus .navicon{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+
+.hero .container{
+    position: relative;
+    z-index: 3; 
+    margin-left: 300px;
+    color: var(--contrast-color);
+}
+.hero img{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+.hero h2{
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+}
+.hero p{
+    margin: 5px 0 0 0;
+    font-size: 26px;
+}
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--tertiary-color), transparent 60%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 3px solid var(--accent-color);
+}
+.hero .container .btn-custom{
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.hero .container .btn-custom:hover{
+  background-color: var(--background-color);
+  color: var(--accent-color);
+}
+.hidden{
+  display: none !important;
+}
